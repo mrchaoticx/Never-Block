@@ -6,7 +6,9 @@ function createDom(look, code, tabname, content){
     win.document.write(`<script>${code};</script>`);
 }
 
-fetch('https://mrchaoticx.github.io/Never-Block/unblock-content.json').then(response=> response.json()).then(data=>{
+//Declare X in separate Script tag, (Where your JSON file is located)
+
+fetch(x).then(response=> response.json()).then(data=>{
         const style = data.style;
         const htm = data.html;
         const scrip = data.script;
